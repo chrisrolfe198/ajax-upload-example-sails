@@ -34,6 +34,14 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  'get /example': {
+    controller: 'UploadController',
+    action: 'form'
+  },
+  'post /example': {
+    controller: 'UploadController',
+    action: 'ajax_upload'
   }
 
   /***************************************************************************
